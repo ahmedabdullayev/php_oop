@@ -7,6 +7,8 @@ class Person
     public  $eyeColor;
     public  $age;
 
+    public static $drinkingAge = 21;
+
     //constructor
     public function __construct($name, $eyeColor, $age){
         $this->name = $name;
@@ -20,6 +22,13 @@ class Person
     }
     public function getName(){
         return $this->name;
+    }
+
+    public static function setDrinkingAge($newDA){
+        self::$drinkingAge = $newDA;
+    }
+    public function getDA(){
+        return self::$drinkingAge;
     }
     //desctructor
     public function __destruct()

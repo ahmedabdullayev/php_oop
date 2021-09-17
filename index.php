@@ -2,10 +2,10 @@
 include "includes/person.php";
 ?>
 <?php
-    $person1 = new Person("Ahmed", "Blue", 21);
-    echo $person1->getName();
-    echo $person1->eyeColor;
-    $person1->setName("Jogy");
-    echo $person1->name;
+    echo Person::$drinkingAge;
+    Person::setDrinkingAge("19");
+    echo Person::$drinkingAge;
+    $person1 = new Person("ahmed", "blue", 13);
+    echo $person1->getDA();
 
 ?>
