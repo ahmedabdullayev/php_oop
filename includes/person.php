@@ -2,18 +2,17 @@
 
 class Person
 {
-    protected $first = "Ahmed";
-    private $last = "Abdullajev";
-    public function maga(){
-        return "dovn";
+    // Properties
+    public  $name;
+    public  $eyeColor;
+    public  $age;
+
+    // Methods
+    public function setName($name){
+        $this->name = $name;
+    }
+    public function getName(){
+        return $this->name;
     }
 }
 
-class Pet extends Person {
-    public function owner(){
-        $a = $this->first;
-        echo $this->maga();
-        return $a;
-    }
-
-}
