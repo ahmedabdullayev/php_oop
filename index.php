@@ -1,7 +1,11 @@
 <?php
-include "includes/person.php";
+include "includes/autoloeader.php" // load classes automatically
+
 ?>
+
 <?php
+use Person\Person;
+
     echo Person::$drinkingAge;
     Person::setDrinkingAge("19");
     echo Person::$drinkingAge;
