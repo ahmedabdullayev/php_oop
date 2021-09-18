@@ -1,9 +1,6 @@
 <?php
-include "abstract/paymentTypes.php"; // load classes automatically
-include "classes/BuyProduct.php"; // load classes automatically
-
-$buyProduct = new BuyProduct();
-echo $buyProduct->getPayment();
+include "includes/autoload.php"; // load classes automatically
+//spl_autoload_register();
 ?>
 
 <html>
@@ -11,7 +8,12 @@ echo $buyProduct->getPayment();
 
 </head>
 <body>
+<?php
 
+    $test = new Test();
+    $test->setPostsStmt("New content coming soon", 1);
+    $test->getPostsStmt(1);
+?>
 
 
 </body>
