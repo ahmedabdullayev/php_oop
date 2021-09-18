@@ -15,4 +15,6 @@ use Calculator\Calc;
     echo"<br>";
     echo $operation->personConst();
     echo"<br>";
+    echo $operation->payNow();
+    echo"<br>";
     echo $operation->calculator();

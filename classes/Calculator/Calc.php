@@ -1,8 +1,10 @@
 <?php
 namespace Calculator;
+use Interfaces\PaymentInterface;
+//include $_SERVER['DOCUMENT_ROOT']."/php_courses/php_oop/Interfaces/PaymentInterface.php";
 use Person\Person;
 
-class Calc extends Person
+class Calc extends Person implements PaymentInterface
 {
     public $operator;
     public $num1;
@@ -39,5 +41,10 @@ class Calc extends Person
                 break;
         }
         return $result;
+    }
+
+    public function payNow()
+    {
+        echo "payed";
     }
 }
