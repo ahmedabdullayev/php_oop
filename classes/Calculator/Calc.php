@@ -1,6 +1,8 @@
 <?php
 namespace Calculator;
-class Calc
+use Person\Person;
+
+class Calc extends Person
 {
     public $operator;
     public $num1;
@@ -11,7 +13,12 @@ class Calc
         $this->num1 = $num1;
         $this->num2 = $num2;
     }
-
+    public function person(){
+        echo self::$drinkingAge;
+    }
+    public function personConst(){
+        echo self::EXAMPLE;
+    }
     public function calculator(){
         $result = 0;
         switch ($this->operator){

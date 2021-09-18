@@ -9,6 +9,8 @@ class Person
     public  $eyeColor;
     public  $age;
 
+    const EXAMPLE = "Hello Constanta";
+
     public static $drinkingAge = 21;
 
     //constructor
