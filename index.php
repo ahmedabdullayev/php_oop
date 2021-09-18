@@ -1,6 +1,9 @@
 <?php
-include "includes/autoload.php"; // load classes automatically
+//include "includes/autoload.php"; // load classes automatically
 //spl_autoload_register();
+
+require_once ('loader.php');
+require_once ('constants.php');
 ?>
 
 <html>
@@ -10,9 +13,11 @@ include "includes/autoload.php"; // load classes automatically
 <body>
 <?php
 
-    $test = new Test();
-    $test->setPostsStmt("New content coming soon", 1);
-    $test->getPostsStmt(1);
+    $postsObj = new postsView();
+    $postsObj->showPosts(1);
+
+    $postsObj2 = new postsController();
+    $postsObj2->createUser("Content is coming", 1)
 ?>
 
 
