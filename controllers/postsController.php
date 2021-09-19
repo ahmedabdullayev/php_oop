@@ -2,7 +2,9 @@
 
 class postsController extends Posts
 {
-    public function createUser($content, $categoryId){
-        $this->setPosts($content, $categoryId);
+    public static function createPost($content, $categoryId){
+        parent::setPosts($content, $categoryId);
+        echo "Added!";
     }
+
 }
