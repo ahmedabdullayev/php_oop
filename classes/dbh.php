@@ -5,7 +5,7 @@ class Dbh
     private static $host = "localhost";
     private static $user = "root";
     private static $pwd = "";
-    private static $dbName = "ex";
+    private static $dbName = "sw";
 
     protected static function connect(){
         $dsn = 'mysql:host='. self::$host .';dbname='. self::$dbName;

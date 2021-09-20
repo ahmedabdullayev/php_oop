@@ -18,8 +18,14 @@ require_once('Routes/web.php');
 <?php
 
 
-    $postsObj = new postsView();
-    $postsObj->showPosts(1);
+//    $postsObj = new postsView();
+//    $postsObj->showPosts(1);
+
+    $prodObj = new ProductController();
+    $prodObj->createProduct("League 3",1,0.99, 600);
+
+    $products = new ProductView();
+    $products->showProducts();
 //
 //    $postsObj2 = new postsController();
 //    $postsObj2->createPost("Content is coming", 1)
