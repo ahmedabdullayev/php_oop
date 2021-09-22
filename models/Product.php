@@ -21,5 +21,9 @@ class Product extends Dbh
         $stmt2 = parent::connect()->prepare($sql2);
         $stmt2->execute([$productTypeId,$productId,$size, $height, $width, $length, $weight]);
     }
+    public static function deleteProducts($productIds){
 
+        $sql = "DELETE FROM product WHERE id IN ($productIds)";
+        parent::connect()->query($sql);
+    }
 }
