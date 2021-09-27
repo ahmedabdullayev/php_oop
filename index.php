@@ -24,6 +24,7 @@ require_once('Routes/web.php');
 //    $prodObj->createProduct("League 3",1,0.99, 600);
 
 //    $post = new Product();
+//    $post->addProduct("somesku","NAMEsht", 0.33, 1);
 //    $post->deleteProducts();
 //
 //    $postsObj2 = new postsController();
